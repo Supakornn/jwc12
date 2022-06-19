@@ -6,7 +6,7 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 100px;
   h1 {
     font-size: 50px;
     color: white;

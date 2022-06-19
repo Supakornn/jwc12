@@ -4,14 +4,18 @@ import styled from "styled-components";
 const AboutContainer = styled.div`
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  margin: 100px;
-  margin-top: 150px;
+  justify-content: space-around;
+  margin-top: 100px;
+
+  .text {
+    margin-top: 100px;
+  }
 
   .subtitle {
     margin-top: 20px;
     width: 900px;
   }
+
   h1 {
     font-size: 40px;
     font-weight: 100;
@@ -21,9 +25,12 @@ const AboutContainer = styled.div`
     font-size: 20px;
   }
 
-  .pic > img {
-    width: 300px;
-    height: 400px;
+  .pic {
+    margin-top: 50px;
+    > img {
+      width: 300px;
+      height: 400px;
+    }
   }
 `;
 const About = () => {
@@ -33,8 +40,11 @@ const About = () => {
         <h1>ประวัติหมอหมึก</h1>
         <div className="subtitle">
           <p>
-            หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วยลูกแก้วพยากรณ์ ไพ่ทาโร่
-            และการดูลายมือด้วยความสามารถที่หลากหลายทำให้หมอสามารถเลือกวิธีการทำนายที่เหมาะกับแต่ละบุคคลเพื่อให้ได้ผลลัพธ์ที่แม่นยำที่สุด
+            หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วยลูกแก้วพยากรณ์ ไพ่ทาโร่ และการดูลายมือ
+          </p>
+          <br />
+          <p>
+            ด้วยความสามารถที่หลากหลายทำให้หมอสามารถเลือกวิธีการทำนายที่เหมาะกับแต่ละบุคคลเพื่อให้ได้ผลลัพธ์ที่แม่นยำที่สุด
           </p>
         </div>
         <p></p>

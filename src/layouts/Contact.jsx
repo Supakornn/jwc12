@@ -6,7 +6,6 @@ const ContactContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-
   padding-bottom: 50px;
 
   img {
@@ -26,6 +25,26 @@ const ContactContainer = styled.div`
   p {
     font-size: 20px;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    .text {
+      margin-right: 130px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
 `;
 
 const Contact = () => {
@@ -42,7 +61,7 @@ const Contact = () => {
         <p>และมาที่สำนักที่</p>
         <p>ชั้น 12 อาคาร JWC ถนนโปรแกรมมิ่ง แขวงเว็บ เขตอินเตอร์เน็ต กรุงเทพ 99999</p>
         <p> ตามวันเวลาที่นัดไว้</p>
-        <br />
+        <br></br>
         <p>จำกัดที่ 10 คิวต่อหนึ่งวัน เปิดทำการ</p>
         <p>10.00 - 18.30 พัก 12.00 - 13.00</p>
         <p>เปิดทุกวันอังคารถึงเสาร์ หยุดวันจันทร์และอาทิตย์</p>

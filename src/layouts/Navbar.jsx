@@ -6,7 +6,7 @@ const NavbarContainer = styled.div`
   flex-direction: row-reverse;
   align-items: center;
   height: 40px;
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
 
   .ButtonContainer > a {
     font-size: 20px;
@@ -14,6 +14,9 @@ const NavbarContainer = styled.div`
     padding: 20px;
     color: white;
   }
+
+  /* @media (max-width: 768px) {
+  } */
 `;
 const Navbar = () => {
   return (

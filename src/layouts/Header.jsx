@@ -31,6 +31,12 @@ const HeaderContainer = styled.div`
     font-weight: bold;
     margin: 20px;
   }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 18px;
+    }
+  }
 `;
 const Header = () => {
   return (

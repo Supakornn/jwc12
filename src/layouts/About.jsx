@@ -8,7 +8,8 @@ const AboutContainer = styled.div`
   margin-top: 100px;
 
   .text {
-    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
   }
 
   .subtitle {
@@ -26,13 +27,28 @@ const AboutContainer = styled.div`
   }
 
   .pic {
-    margin-top: 50px;
     > img {
       width: 300px;
       height: 400px;
     }
   }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
 `;
+
 const About = () => {
   return (
     <AboutContainer>
@@ -42,7 +58,6 @@ const About = () => {
           <p>
             หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วยลูกแก้วพยากรณ์ ไพ่ทาโร่ และการดูลายมือ
           </p>
-          <br />
           <p>ด้วยความสามารถที่หลากหลาย</p>
           <p>
             ทำให้หมอหมึกสามารถเลือกวิธีการทำนายที่เหมาะกับแต่ละบุคคลเพื่อให้ได้ผลลัพธ์ที่แม่นยำที่สุด

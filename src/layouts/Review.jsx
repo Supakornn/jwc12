@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Reviews from "../components/Reviews";
 
 const ReviewContainer = styled.div`
-  margin-top: 200px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,10 +14,17 @@ const ReviewContainer = styled.div`
     font-size: 40px;
     font-weight: 100;
   }
-
-  .AllReivews {
+  .reviews {
     display: flex;
-    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    .reviews {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -25,7 +32,7 @@ const Review = () => {
   return (
     <ReviewContainer>
       <h1>รีวิวจากลูกค้า</h1>
-      <div className="AllReivews">
+      <div className="reviews">
         <Reviews
           pic="https://i.pinimg.com/564x/19/fc/60/19fc6098735759b33678924a0cc7789e.jpg"
           title="แมทธิว นักธุรกิจ"

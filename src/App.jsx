@@ -8,6 +8,7 @@ import Header from "./layouts/Header";
 
 const AppContainer = styled.div`
   background-color: #612378;
+  height: 100vh;
 `;
 
 const App = () => {

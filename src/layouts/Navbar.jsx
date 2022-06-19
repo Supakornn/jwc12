@@ -9,7 +9,7 @@ const NavbarContainer = styled.div`
   border-bottom: 1px solid #fff;
 
   .ButtonContainer > a {
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     padding: 20px;
     color: white;

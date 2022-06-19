@@ -13,7 +13,7 @@ const HeaderContainer = styled.div`
     font-weight: normal;
   }
   p {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     font-weight: normal;
     margin: 20px;

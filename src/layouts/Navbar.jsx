@@ -1,31 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-
+import Burger from "../components/Burger";
 const NavbarContainer = styled.div`
+  width: 100%;
+  height: 55px;
+  border: 1px solid #f1f1f1;
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  height: 40px;
-  border: 1px solid #fff;
-
-  .ButtonContainer > a {
-    font-size: 20px;
-    text-decoration: none;
-    padding: 20px;
-    color: white;
-  }
-
-  /* @media (max-width: 768px) {
-  } */
 `;
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <div className="ButtonContainer">
-        <a href="#">เกี่ยวกับหมอหมึก</a>
-        <a href="#">บทความ</a>
-        <a href="#">จองคิว</a>
-      </div>
+      <div></div>
+      <Burger />
     </NavbarContainer>
   );
 };

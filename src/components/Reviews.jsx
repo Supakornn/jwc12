@@ -7,7 +7,7 @@ const Review = styled.div`
   align-items: center;
   justify-content: center;
   width: 500px;
-  margin: 50px;
+  padding: 50px;
   height: fit-content;
   color: white;
 
@@ -24,7 +24,7 @@ const Review = styled.div`
 
   .desc {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 300px;
     font-weight: 100;
     font-size: 16px;
